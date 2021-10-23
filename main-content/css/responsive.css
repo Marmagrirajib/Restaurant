@@ -1,0 +1,56 @@
+@media only screen and (max-width:1280px){
+    
+    .home-img {
+        margin-top: 0%;
+    }
+    .food-menu-item-text h4 {
+        font-size: 19px;
+    }    
+}    
+@media only screen and (max-width:991px){
+    .home-img {
+        margin-top: 10%;
+    }
+}
+@media only screen and (max-width:500px){
+    .banner-text h1 {
+        font-size: 50px;
+    }
+    .banner-text h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .header-title {
+        font-size: 17px;
+    }
+    .restrunt-text h2 {
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width:410px){
+    .banner-text h1 {
+        color: #069c54;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 26px;
+        margin-top: 35px;
+    }
+    .restrunt-text h2 {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:310px){
+    .banner-text h2 {
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .restrunt-text h2 {
+        font-size: 24px;
+    }
+    .footer-top-form .footer-btn {
+      margin-top: 0px !important;
+        padding: 15px 30px;
+    }
+}

@@ -1,0 +1,634 @@
+/* 
+====================================================================
+bacic setup
+====================================================================
+*/
+body{
+    font-family: sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    font-weight: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: border-box;
+}
+.clear-fixt::after{
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+html{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/*
+============================================================
+header css
+============================================================
+*/
+.bg-navbar{
+    background: #069c54;
+}
+.nav-bar-position{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.39);
+}
+
+.navbar-icon{
+    font-size:27px ;
+}
+.main-menu li {
+    margin: 10px 15px;
+    text-align: center;
+}
+.main-menu li a{
+    color: white;
+    font-size: 18px;
+}
+.main-menu-icon{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: none !important;
+}
+.header-section{
+    background: rgb(255, 255, 255);
+    padding-bottom: 50px;
+}
+.banner{
+ margin-top: 20%;
+}
+.banner-text h1{
+    color: #069c54;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.banner-text h2{
+   font-weight: 700; 
+   font-size: 35px;
+   line-height: 40px;
+}
+
+.my-btn{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 20px 0;
+    background: #069c54;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 3px solid #069c54;
+    font-weight: 600;
+    transition: all .5s;
+}
+.my-btn:hover{
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+.home-img{
+    margin-top: -15%;
+}
+/*
+============================================================
+about section css
+============================================================
+*/
+.about-section{
+    background: #f5fcff;
+    padding: 50px 0;
+}
+.about-img img{
+    border-radius: 10px;
+}
+.restrunt-text h5{
+    color: #069c54;
+    font-weight: 600;
+    line-height: 30px;
+    position: relative;
+}
+.restrunt-text h5::after{
+    content: " ";
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    background: #069c54;
+    bottom: -3px;
+    border-radius: 10px;
+}
+.restrunt-text h2{
+    font-weight: 700;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.restrunt-text p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+.restrunt-text ul li i{
+  color: #069c54;
+  font-size: 22px;
+  width: 30px;
+}
+.restrunt-text ul li{
+    color: rgb(71, 71, 71);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.header-title{
+    color: rgb(59, 59, 59);
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+/*
+============================================================
+service section css
+============================================================
+*/
+.service-section{
+    padding: 50px 0;
+}
+.site-header h5{
+    color: #069c54;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+.site-header h5::before{
+    content: " ";
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    background: #069c54;
+    bottom: -7px;
+    border-radius: 10px;
+}
+.site-header h2{
+    font-weight: 600;
+    margin: 15px 0;
+}
+.service-item{
+    text-align: center;
+    margin: 15px 20px;
+}
+.service-item img{
+    margin-bottom: 5px;
+}
+.service-item .service-item-text h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.service-item .service-item-text p{
+  color: rgb(65, 65, 65);
+  font-size: 18px;
+  line-height: 25px;
+}
+/*
+============================================================
+food menu section css
+============================================================
+*/
+.food-menu-section{
+    padding: 50px 0;
+    background: #f6fffc;
+}
+.food-menu-item{
+    margin: 15px 20px;
+    box-shadow: 0px 0px 15px 0px #00000025;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    padding-bottom: 35px;
+}
+.food-menu-item-text h4{
+    font-weight: 600;
+}
+.food-menu-item-text h4 {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 20px;
+}
+.food-menu-item-text p{
+    color: #4e4e4e;
+    margin-bottom: 0;
+}
+.food-menu-item-text h5{
+    margin: 10px 0;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.food-menu-btn{
+    color: white;
+    background: #069c54;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 2px solid #069c54;
+    transition: all .3s;
+}
+.food-menu-btn:hover{
+    color: #000000;
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+/*=============== owl carousel slider css========== */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    outline: none;
+}
+.owl-next {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-prev {
+    position: absolute;
+    left:-5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-next span{
+    font-size: 60px;
+    color: #069c54;
+}
+.owl-prev span{
+    font-size: 60px;
+    color: #069c54;
+}
+.owl-next:hover{
+    background: rgba(0, 0, 0, 0);
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0);
+}
+.cloned{
+    margin-right: 25px !important;
+}
+.owl-item{
+    margin-right: 30px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #069c54;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+.owl-theme .owl-dots .owl-dot span {
+    height: 15px;
+    width: 15px;
+    border-radius:2px ;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: 16px;
+}
+/*
+============================================================
+app section section css
+============================================================
+*/
+.app-section{
+    padding: 50px 0;
+}
+.app-download-btn img{
+    width: 150px;
+    height: auto;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+/*
+============================================================
+contact section css
+============================================================
+*/
+.contact-section{
+    padding: 50px 0;
+    overflow: hidden;
+    background: rgb(248, 248, 248);
+}
+.contact-form{
+    margin: auto;
+    text-align: center;
+}
+.contact-form input, textarea{
+    width: 100%;
+    outline: none;
+    margin: 10px 0px;
+    padding: 15px 10px;
+    border-color: #069c5300;
+    border-radius: 5px;
+    border: 2px solid #069c54;
+}
+.contact-form p{
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* 
+====================================================================
+footer top section css  
+====================================================================
+*/
+.footer-top{
+    background:#069c54;
+    color: #fff;
+    padding: 70px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.842);
+}
+
+.footer-top P{
+    font-size: 19px;
+}
+
+.footer-top ul {
+   padding-left: 0;
+   list-style: none;
+   transition: all .5s;
+}
+.footer-top ul li{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(+30px);
+}
+.footer-top ul li a{
+    transition: all .3s;
+}
+.footer-top:hover ul li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.footer-top ul li:nth-child(1){
+    transition-delay: .1s;
+}
+.footer-top ul li:nth-child(2){
+    transition-delay: .2s;
+}
+.footer-top ul li:nth-child(3){
+    transition-delay: .2s;
+}
+.footer-top ul li:nth-child(4){
+    transition-delay: .4s;
+}
+.footer-top ul li a i:hover{
+    background: #fff;
+    color: #069c54;
+}
+.footer-top ul li{
+    display: inline-block;
+}
+.footer-top ul li a i{
+    color: #069c54;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.footer-top-form .footer-btn{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+    z-index: 2;
+    padding: 20px 30px;
+   
+}
+a:hover{
+    text-decoration: none;
+}
+.footer-top-form .main-btn::after{
+    background: white;
+    
+}
+.footer-top-form .main-btn:hover{
+    color: #000;
+}
+.footer-top-form{
+    padding: 40px 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.footer-top-form input{
+    width: 90%;
+    outline: none;
+    padding: 10px 5px;
+    background: #069c54;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+   
+}
+.footer-top-form input::placeholder{
+    color: white;
+}
+
+/* 
+====================================================================
+footer  section css  
+====================================================================
+*/
+.footer-section{
+    background: #069c54;
+    color: white !important;
+}
+.footer-content ul li a{
+    color: white !important;
+    font-size: 19px;
+    margin: 0px 7px;
+    transition: all .5s;
+    
+}
+
+
+.footer-content-ul h4{
+    border-bottom: 1px solid #ffffff;
+}
+.footer-content-ul ul{
+    color: white;
+    list-style: none;
+    padding-left: 0px;
+}
+.footer-content-ul ul li a{
+    color: white;
+    padding: 7px 0px;
+    display: block;
+    font-size: 18px;
+    transition: all .5s;
+}
+.footer-content-ul ul li a:hover{
+    letter-spacing: 1px;
+    color: #000000;
+}
+.footer-contact-icon i {
+    width: 50px;
+    font-size: 23px;
+}
+.footer-location {
+    padding: 10px 0px;
+}
+.footer-location span{
+    font-size: 17px;
+}
+.footer-location a{
+    color: white;
+    transition: all .5s;
+    
+}
+.footer-location a:hover{
+    color: #000000;
+}
+.footer-last-namver i{
+    font-size: 35px;
+}
+/* scrool top btn */
+.top-btn{
+    color: #069c54;
+    background: #fff;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    z-index: 9999;
+    animation: playbtn infinite 1s ease-in-out;
+    display: none;
+    
+}
+.top-btn a{
+    color: #069c54;
+
+}
+@keyframes playbtn{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+.loder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(175, 175, 175);
+    z-index: 9999999;
+    transition: 1s;
+}
+.loder ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loder ul li{
+    height: 40px;
+    width: 5px;
+    background: #ffffff;
+    display: inline-block;
+    margin: 0 5px;
+    animation: site-loder infinite 1s ease-in-out;
+}
+@keyframes site-loder{
+    0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    75%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(2);
+    }
+}
+.loder ul li:nth-child(1){
+    animation-delay: .1s;
+}
+.loder ul li:nth-child(2){
+    animation-delay: .2s;
+}
+.loder ul li:nth-child(3){
+    animation-delay: .3s;
+}
+.loder ul li:nth-child(4){
+    animation-delay: .4s;
+}
+.loder ul li:nth-child(5){
+    animation-delay: .5s;
+}
+.loder-none{
+    display: none;
+}
